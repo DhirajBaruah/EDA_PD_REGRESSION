@@ -1,71 +1,70 @@
-Parkinson's Disease Regression - Exploratory Data Analysis (EDA)
+# Parkinson's Disease Regression - Exploratory Data Analysis (EDA)
 
-Overview
+## Overview
 
 This repository contains an Exploratory Data Analysis (EDA) of the Parkinson's Telemonitoring dataset obtained from the UCI Machine Learning Repository. The dataset includes biomedical voice measurements of people with Parkinson's disease, collected to predict the severity of the disease using regression models.
 
-Dataset Information
+## Dataset Information
 
-Source: UCI Machine Learning Repository
+- Source: UCI Machine Learning Repository
 
-Dataset Name: Parkinson's Telemonitoring Dataset
+- Dataset Name: Parkinson's Telemonitoring Dataset
 
-Features: 16 voice-based biomedical features
+- Features: 16 voice-based biomedical features
 
-Target Variables:
+- Target Variables:
 
-motor_UPDRS: Motor Unified Parkinson’s Disease Rating Scale score
+  - motor_UPDRS: Motor Unified Parkinson’s Disease Rating Scale score
 
-total_UPDRS: Total Unified Parkinson’s Disease Rating Scale score
+  - total_UPDRS: Total Unified Parkinson’s Disease Rating Scale score
 
-Number of Samples: 5,875 recordings from 42 individuals
+- Number of Samples: 5,875 recordings from 42 individuals
 
-Project Objectives
+## Project Objectives
 
-Perform Exploratory Data Analysis (EDA) to understand the dataset structure.
+- Perform Exploratory Data Analysis (EDA) to understand the dataset structure.
 
-Visualize the distribution of features and their relationship with the target variables.
+- Visualize the distribution of features and their relationship with the target variables.
 
-Identify missing values, outliers, and correlations among features.
+- Identify missing values, outliers, and correlations among features.
 
-Prepare the dataset for future regression modeling.
-Key EDA Steps
+- Prepare the dataset for future regression modeling.
 
-Data Loading & Inspection: Checking the structure, missing values, and feature descriptions.
+## Key EDA Steps
 
-Statistical Summary: Analyzing feature distributions and summary statistics.
+1. Data Loading & Inspection: Checking the structure, missing values, and feature descriptions.
 
-Correlation Analysis: Understanding relationships between features and target variables.
+2. Statistical Summary: Analyzing feature distributions and summary statistics.
 
-Visualization:
+3. Correlation Analysis: Understanding relationships between features and target variables.
 
-Histograms and Boxplots for feature distributions.
+4. Visualization:
+    - Histograms and Boxplots for feature distributions.
+    - Scatter plots and Pair plots to examine relationships.
+    - Heatmaps to visualize feature correlations.
 
-Scatter plots and Pair plots to examine relationships.
+5. Feature Engineering : Handling outliers, or transformations.
 
-Heatmaps to visualize feature correlations.
+## Results & Observations
 
-Feature Engineering (if applicable): Handling missing values, outliers, or transformations.
+- Strong correlations found between some voice-based features and UPDRS scores.
 
-Results & Observations
+- Certain features exhibit skewness, suggesting potential transformation.
 
-Strong correlations found between some voice-based features and UPDRS scores.
+- No missing values in the dataset, making it ready for model training.
 
-Certain features exhibit skewness, suggesting potential transformation.
+## Future Work
 
-No missing values in the dataset, making it ready for model training.
+- Implement Regression Models (Linear Regression, Random Forest, etc.) to predict motor_UPDRS and total_UPDRS.
 
-Future Work
+- Feature selection techniques to improve prediction performance.
 
-Implement Regression Models (Linear Regression, Random Forest, etc.) to predict motor_UPDRS and total_UPDRS.
+- Hyperparameter tuning and model evaluation.
 
-Feature selection techniques to improve prediction performance.
+## References
 
-Hyperparameter tuning and model evaluation.
+- [UCI Parkinson's Telemonitoring Dataset]([url](https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring))
 
-References
-
-UCI Parkinson's Telemonitoring Dataset
-Contributions
+## Contributions
 
 Feel free to fork this repository and contribute by improving the EDA or adding new regression models!
